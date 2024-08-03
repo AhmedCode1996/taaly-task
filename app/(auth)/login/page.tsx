@@ -1,7 +1,11 @@
+import AuthGreetings from "../_components/AuthGreetings";
+import LoginForm from "../_components/LoginForm";
+
 const LoginPage = () => {
   return (
-    <section>
-      <h2>login page</h2>
+    <section className="flex bg-white rounded-[13.98px]">
+      <AuthGreetings />
+      <LoginForm />
     </section>
   );
 };
