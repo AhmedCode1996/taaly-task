@@ -4,7 +4,7 @@ export default function DashboardLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <section className="p-6">
+    <section className="p-6 h-full">
       <Navbar />
       {children}
     </section>

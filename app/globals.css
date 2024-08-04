@@ -7,10 +7,6 @@ body {
   height: 100%;
 }
 
-.placeholder-form::placeholder {
-  @apply text-[1.4rem] font-medium text-[#E6E6E8];
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

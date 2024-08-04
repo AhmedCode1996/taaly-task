@@ -20,7 +20,7 @@ const LoginForm = () => {
             email
           </label>
           <input
-            className="rounded-[6.99px] border-[.87px] border-[#B1B0B8] py-[13.98px] px-[20.96px] w-[26.5rem] placeholder-[#E6E6E8] placeholder-form "
+            className="rounded-[6.99px] border-[.87px] border-[#B1B0B8] py-[13.98px] px-[20.96px] w-[26.5rem] text-[1.4rem] font-medium text-[#B1B0B8]"
             type="text"
             id="email"
             placeholder="Example@mail.com"
@@ -34,7 +34,7 @@ const LoginForm = () => {
             password
           </label>
           <input
-            className="rounded-[6.99px] border-[.87px] border-[#B1B0B8]  py-[13.98px] px-[20.96px] w-[26.5rem] placeholder-form"
+            className="rounded-[6.99px] border-[.87px] border-[#B1B0B8] py-[13.98px] px-[20.96px] w-[26.5rem] text-[1.4rem] font-medium text-[#B1B0B8]"
             type="password"
             id="password"
             placeholder="6+ strong characters"
