@@ -2,7 +2,7 @@ import Sidebar from "../_components/Sidebar";
 
 const MonitorPage = () => {
   return (
-    <div className="grid grid-cols-custom-layout pt-3 h-full">
+    <div className="grid grid-cols-custom-layout">
       <Sidebar />
     </div>
   );

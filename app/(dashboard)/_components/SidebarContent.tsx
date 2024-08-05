@@ -61,7 +61,7 @@ const supportData = [
 const SidebarContent = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex flex-col h-dvh p-2">
+    <nav className="flex flex-col py-2 px-2 h-full">
       <ul className="mb-auto">
         {sidebarData.map((item) => {
           const isActive =
@@ -70,21 +70,22 @@ const SidebarContent = () => {
           return (
             <li
               key={item.id}
-              className={`${
+              className={`group ${
                 isActive ? "bg-[#1E00B9]" : "bg-transparent"
-              } p-2 hover:bg-[#1E00B9] rounded-lg `}
+              } p-2 rounded-lg hover:bg-[#1E00B9]`}
             >
               <Link
                 href={item.path}
-                className="flex justify-start items-center gap-2 p-2"
+                className="flex justify-start items-center gap-2 p-2 px-6 w-full rounded-lg"
               >
                 <Image
                   src={item.icon}
                   alt={item.title}
                   width={28}
                   height={28}
+                  className="group-hover:invert"
                 />
-                <p className="text-[#04001A] font-medium text-[1.625rem] hover:text-white w-full">
+                <p className="text-[#04001A] font-medium text-[1.625rem] group-hover:text-white">
                   {item.title}
                 </p>
               </Link>
@@ -101,21 +102,22 @@ const SidebarContent = () => {
           return (
             <li
               key={item.id}
-              className={`${
+              className={`group ${
                 isActive ? "bg-[#1E00B9]" : "bg-transparent"
-              } p-2 hover:bg-[#1E00B9]  rounded-lg`}
+              } p-2 rounded-lg hover:bg-[#1E00B9]`}
             >
               <Link
                 href={item.path}
-                className="flex justify-start items-center gap-2"
+                className="flex justify-start items-center gap-2 p-2 px-6 w-full rounded-lg"
               >
                 <Image
                   src={item.icon}
                   alt={item.title}
                   width={28}
                   height={28}
+                  className="group-hover:invert"
                 />
-                <p className="text-[#04001A] font-medium text-[1.625rem] hover:text-white">
+                <p className="text-[#04001A] font-medium text-[1.625rem] group-hover:text-white">
                   {item.title}
                 </p>
               </Link>

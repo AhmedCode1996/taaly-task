@@ -16,6 +16,9 @@ const config: Config = {
       gridTemplateColumns: {
         "custom-layout": "auto 1fr auto",
       },
+      gridTemplateRows: {
+        "custom-layout-height": "auto 1fr",
+      },
     },
     fontSize: {
       sm: "0.8rem",
