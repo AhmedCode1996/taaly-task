@@ -80,7 +80,7 @@ const SidebarContent = () => {
               >
                 <Image
                   src={item.icon}
-                  alt={item.title}
+                  alt={`${item.title} icon`}
                   width={28}
                   height={28}
                   className="group-hover:invert"
@@ -93,7 +93,7 @@ const SidebarContent = () => {
           );
         })}
       </ul>
-      <ul className="mt-auto">
+      <ul className="mt-auto mb-6">
         {supportData.map((item) => {
           const isActive =
             (pathname.includes(item.path) && item.path.length !== 0) ||
@@ -112,7 +112,7 @@ const SidebarContent = () => {
               >
                 <Image
                   src={item.icon}
-                  alt={item.title}
+                  alt={`${item.title} icon`}
                   width={28}
                   height={28}
                   className="group-hover:invert"
