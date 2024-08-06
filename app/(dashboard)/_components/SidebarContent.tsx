@@ -85,7 +85,7 @@ const SidebarContent = () => {
                   height={28}
                   className="group-hover:invert"
                 />
-                <p className="text-[#04001A] font-medium text-[1.625rem] group-hover:text-white">
+                <p className="text-[#04001A] max-md:hidden font-medium text-[1.625rem] group-hover:text-white">
                   {item.title}
                 </p>
               </Link>

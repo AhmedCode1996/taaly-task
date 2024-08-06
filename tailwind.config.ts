@@ -17,7 +17,7 @@ const config: Config = {
         "custom-layout": "auto 1fr auto",
         "custom-carousel-layout": "repeat(auto-fit, minmax(min(300px, 100%), 1fr))",
         "custom-badge-layout":
-          "repeat(auto-fit, minmax(min(230px, 100%), 1fr))",
+          "repeat(auto-fit, minmax(min(220px, 100%), 1fr))",
       },
       gridTemplateRows: {
         "custom-layout-height": "auto 1fr",

@@ -1,7 +1,31 @@
-import formShape from "@/public/formShape.png";
+"use client";
+import { useState } from "react";
+
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "app/firebase/config";
+
 import Image from "next/image";
 import Link from "next/link";
+
+import formShape from "@/public/formShape.png";
+
 const LoginForm = () => {
+  const [userAuth, setUserAuth] = useState({
+    email: "",
+    password: "",
+  });
+  const handleLoginAuth = async (e) => {
+    e.preventDefault();
+    await signInWithEmailAndPassword(auth, userAuth.email, userAuth.password);
+    setUserAuth({
+      email: "",
+      password: "",
+    });
+    try {
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="bg-white rounded-[13.98px] pl-28 pt-10 pr-14 pb-52 relative">
       <h2 className="text-3xl text-[#04001A] font-semibold">
@@ -20,6 +44,15 @@ const LoginForm = () => {
             email
           </label>
           <input
+            value={userAuth.email}
+            onChange={(e) =>
+              setUserAuth((prev) => {
+                return {
+                  ...prev,
+                  email: e.target.value,
+                };
+              })
+            }
             className="rounded-[6.99px] border-[.87px] border-[#B1B0B8] py-[13.98px] px-[20.96px] w-[26.5rem] text-[1.4rem] font-medium text-[#B1B0B8]"
             type="text"
             id="email"
@@ -34,6 +67,15 @@ const LoginForm = () => {
             password
           </label>
           <input
+            value={userAuth.password}
+            onChange={(e) =>
+              setUserAuth((prev) => {
+                return {
+                  ...prev,
+                  password: e.target.value,
+                };
+              })
+            }
             className="rounded-[6.99px] border-[.87px] border-[#B1B0B8] py-[13.98px] px-[20.96px] w-[26.5rem] text-[1.4rem] font-medium text-[#B1B0B8]"
             type="password"
             id="password"
@@ -47,7 +89,7 @@ const LoginForm = () => {
           forgot password?
         </Link>
         <button
-          type="submit"
+          onClick={handleLoginAuth}
           className="bg-[#1E00B9] text-white font-semibold text-[1.4rem] py-2 px-12 rounded-[6.99px] w-fit mx-auto"
         >
           Login

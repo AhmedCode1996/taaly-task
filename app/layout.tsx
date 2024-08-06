@@ -1,6 +1,9 @@
+
 import type { Metadata } from "next";
 import { Baloo_Bhaijaan_2 } from "next/font/google";
 import "./globals.css";
+
+import AuthProvider from "context/AuthContext";
 
 const baloo = Baloo_Bhaijaan_2({ subsets: ["latin"] });
 
@@ -16,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={baloo.className}>{children}</body>
+      <body className={baloo.className}>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }

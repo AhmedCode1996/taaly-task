@@ -96,14 +96,43 @@ const DashboardStatistics = () => {
                 />
                 <span className="ml-2">{learner.name}</span>
               </td>
-              <td className="py-2 px-4">{learner.level}</td>
-              <td className="py-2 px-4">{learner.program}</td>
-              <td className="py-2 px-4">{learner.organization}</td>
-              <td className="py-2 px-4">{learner.rating}</td>
-              <td className="py-2 px-4">
-                <span>{learner.hoursSpent} /10h</span>
+              <td className="px-4">{learner.program}</td>
+              <td className="px-4">{learner.organization}</td>
+              <td className="px-4">{learner.level}</td>
+              <td className="px-4">{learner.rating}</td>
+              <td className="px-4">
+                <div className="relative w-16 h-16">
+                  <svg className="absolute inset-0 w-full h-full">
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="40%"
+                      stroke="#B1B0B8"
+                      stroke-width="2"
+                      fill="transparent"
+                    />
+                  </svg>
+                  <svg className="absolute inset-0 w-full h-full">
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                      r="40%"
+                      stroke="#04001A"
+                      stroke-width="3.8"
+                      stroke-dasharray="100"
+                      strokeLinecap="round"
+                      fill="transparent"
+                    />
+                  </svg>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-[#04001A]">
+                    <span className="font-bold text-base leading-5">
+                      {learner.hoursSpent}
+                    </span>
+                    <span className="font-medium text-sm leading-5">/10h</span>
+                  </div>
+                </div>
               </td>
-              <td className="py-2 px-4 text-[#1E00B9] cursor-pointer">
+              <td className="px-4 text-[#1E00B9] cursor-pointer">
                 <Link href="#">View →</Link>
               </td>
             </tr>
