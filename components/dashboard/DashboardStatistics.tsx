@@ -89,7 +89,7 @@ const DashboardStatistics = () => {
               <td className="flex items-center py-2 px-4">
                 <Image
                   src={learner.imageUrl}
-                  alt={learner.name}
+                  alt={`${learner.name} avatar`}
                   width={50}
                   height={50}
                   className="rounded-full"
