@@ -1,10 +1,9 @@
-// context/AuthContext.js
-'use client'
+"use client";
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged, User } from "firebase/auth";
 import { auth } from "app/firebase/config";
 
-export const AuthContext = createContext({
+export const AuthContext = createContext<{ user: User | null }>({
   user: null,
 });
 
@@ -13,7 +12,7 @@ export default function AuthProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
