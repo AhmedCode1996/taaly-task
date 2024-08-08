@@ -1,5 +1,5 @@
-import AuthGreetings from "../_components/AuthGreetings";
-import LoginForm from "../_components/LoginForm";
+import AuthGreetings from "../../../components/auth/shared/AuthGreetings";
+import LoginForm from "../../../components/auth/signin/LoginForm";
 
 const LoginPage = () => {
   return (

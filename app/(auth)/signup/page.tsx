@@ -1,5 +1,5 @@
-import AuthGreetings from "../_components/AuthGreetings";
-import SignupForm from "../_components/SignupForm";
+import AuthGreetings from "../../../components/auth/shared/AuthGreetings";
+import SignupForm from "../../../components/auth/signup/SignupForm";
 
 const SignupPage = () => {
   return (

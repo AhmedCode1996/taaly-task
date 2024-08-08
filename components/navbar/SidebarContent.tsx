@@ -107,7 +107,7 @@ const SidebarContent = () => {
               } p-2 rounded-lg hover:bg-[#1E00B9]`}
             >
               <Link
-                href={item.path}
+                href="#"
                 className="flex justify-start items-center gap-2 p-2 px-6 w-full rounded-lg"
               >
                 <Image

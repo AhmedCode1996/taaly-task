@@ -1,5 +1,5 @@
-import LeanersActivity from "@/components/dashboard/LeanersActivity";
-import Sidebar from "../_components/Sidebar";
+import LeanersActivity from "@/components/dashboard/learners/LeanersActivity";
+import Sidebar from "../../../components/navbar/Sidebar";
 import MainContent from "@/components/dashboard/MainContent";
 
 const MonitorPage = () => {

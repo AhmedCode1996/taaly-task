@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import Logo from "./Logo";
-import SearchInput from "./SearchInput";
-import Profile from "./Profile";
+import SearchInput from "../header/SearchInput";
+import Profile from "../header/Profile";
+import Logo from "../header/Logo";
 
 const Navbar = () => {
   return (

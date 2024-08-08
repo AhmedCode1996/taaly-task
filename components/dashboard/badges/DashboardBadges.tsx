@@ -1,4 +1,3 @@
-import React from "react";
 import BadgeCard from "./BadgeCard";
 
 const contentBadgesData = [
