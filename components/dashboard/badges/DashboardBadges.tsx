@@ -29,7 +29,7 @@ const contentBadgesData = [
 
 const DashboardBadges = () => {
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[23px]">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[23px]">
       {contentBadgesData.map((badge) => {
         return <BadgeCard key={badge.id} {...badge} />;
       })}

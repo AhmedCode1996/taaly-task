@@ -49,7 +49,7 @@ const LearnersTable = () => {
         {learners.map((learner, index) => (
           <tr
             key={index}
-            className="border-b last:border-none text-[#04001A] font-medium text-xl"
+            className="border-b last:border-none text-[#04001A] font-medium text-base"
           >
             <td className="flex items-center py-2 px-4">
               <Image
