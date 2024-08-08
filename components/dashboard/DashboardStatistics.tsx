@@ -1,6 +1,6 @@
 import LearnersHeader from "./learners/LearnersHeader";
-import LearnersTab from "./learners/LearnersTab";
 import LearnersTable from "./learners/LearnersTable";
+import LearnersTab from "./learners/LearnersTab";
 
 const DashboardStatistics = () => {
   return (
