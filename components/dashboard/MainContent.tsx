@@ -1,6 +1,6 @@
 import DashboardBadges from "./badges/DashboardBadges";
+import DashboardCarousel from "./carousel/DashboardCarousel";
 import DashboardStatistics from "./DashboardStatistics";
-import DashboardCarousel from "./DashboardCarousel";
 
 const MainContent = () => {
   return (
